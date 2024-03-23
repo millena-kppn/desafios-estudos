@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Texte</title>
+   <style>
+      body{
+         background-color: gray;
+      }
+      main{
+         background-color: white;
+         padding: 20px;
+         border-radius: 15px;
+         /* parte da responsavidade */
+         min-width: 350px;
+         max-width: 800px;
+         margin: auto;
+         /* o margin: auto; sempre vai centralizar os elementos no
+         centro, ele calcula o valor da left e right */
+      }
+      img{
+         width: 100%;
+         /* exemplo para a img se tornar responsiva dentro da main */
+      }
+   </style>
+</head>
+<body>
+   <main>
+      <h1>Texo</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat provident pariatur esse doloremque nihil maxime tenetur quibusdam ratione totam officiis necessitatibus voluptas magni dolores, molestiae animi reiciendis nam obcaecati itaque.</p>
+      <picture>
+         <source media="(max-width: 600px)" srcset="imgs/irina-blok-pq.jpg">
+         <img src="imgs/irina-blok.jpg" alt="imagem">
+      </picture>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam commodi reiciendis consequatur assumenda saepe magnam, illo quos officiis, consectetur dignissimos libero, nisi minima. A temporibus recusandae aperiam nostrum, odit nemo!</p>
+   </main>
+</body>
+</html>
