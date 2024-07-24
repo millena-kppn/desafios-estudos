@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Praticando</title>
+   <style>
+      body {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #table-on {
+         width: 400px;
+         height: 200px;
+         text-align: center;
+         border: 2px dashed blue;
+         border-collapse: collapse;
+      }
+
+       tr,td {
+         border: 1px solid black;
+      }
+
+      .cor {
+         background-color: rgb(134, 221, 134);
+      }
+
+      #table-two{
+         width:  700px;
+         height: 200px;
+         text-align: center;
+         border-collapse: collapse;
+      }
+
+      th{
+         background-color: grey;
+         color: white;
+      }
+
+   </style>
+</head>
+<body>
+   <h1>Exercítando</h1>
+   <h2>Tabela simples</h2>
+   <table id="table-on">
+      <tr>
+         <td>01</td>
+         <td>02</td>
+         <td>03</td>
+      </tr>
+      <tr>
+         <td>04</td>
+         <td class="cor">05</td>
+         <td>06</td>
+      </tr>
+      <tr>
+         <td>07</td>
+         <td>08</td>
+         <td>09</td>
+      </tr>
+   </table>
+   <h2>Tabela com Thead, Tbody e Tfooter</h2>
+   <table id="table-two">
+      <thead>
+         <tr>
+            <th>Alimentos</th>
+            <th>Valor Calorico</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>Arroz</td>
+            <td>130</td>
+         </tr>
+         <tr>
+            <td>Banana</td>
+            <td>89</td>
+         </tr>
+         <tr>
+            <td>Massa</td>
+            <td>131</td>
+         </tr>
+      </tbody>
+      <tfoot>
+         <tr>
+            <th>Valor Consumido</th>
+            <td><strong>350</strong></td>
+         </tr>
+      </tfoot>
+   </table>
+</body>
+</html>
