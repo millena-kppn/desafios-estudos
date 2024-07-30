@@ -34,6 +34,7 @@
       }
 
       th{
+         border: 1px solid black;
          background-color: grey;
          color: white;
       }
@@ -64,8 +65,8 @@
    <table id="table-two">
       <thead>
          <tr>
-            <th>Alimentos</th>
-            <th>Valor Calorico</th>
+            <th scope="col">Alimentos</th>
+            <th scope="col">Valor Calorico</th>
          </tr>
       </thead>
       <tbody>
@@ -84,7 +85,7 @@
       </tbody>
       <tfoot>
          <tr>
-            <th>Valor Consumido</th>
+            <th scope="row">Valor Consumido</th>
             <td><strong>350</strong></td>
          </tr>
       </tfoot>
