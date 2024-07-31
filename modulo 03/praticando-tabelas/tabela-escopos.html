@@ -11,6 +11,7 @@
       table{
          width: 500px;
          border-collapse: collapse;
+         text-align: center;
       }
       thead{
          background-color: gray;
@@ -23,12 +24,11 @@
       }
       /* uso de class */
       .rowmedias{
-         text-align: left;
          background-color: gray;
          color: white;
       }
-      .numbercenter{
-         text-align: center;
+      .lefttext{
+         text-align: left;
       }
    </style>
 </head>
@@ -36,66 +36,66 @@
    <h1>Praticando escopos em tabelas</h1>
    <table>
       <caption>Boletim</caption>
-      <!-- cabeçalho da tabela -->
+     <!-- cabeçalho da tabela -->
       <thead>
             <tr>
                <th rowspan="2" scope="col">Área</th>
                <th rowspan="2" scope="col">Diciplinas</th>
                <th colspan="2" scope="colgroup">Notas</th>
-               <th rowspan="2" scope="col">Média</th>
+               <th rowspan="2"scope="col">Média</th>
             </tr>
             <tr>
                <th>Nota 1</th>
-               <th >Nota 2</th>
+               <th>Nota 2</th>
             </tr>
       </thead>
       <!-- corpo da tabela  -->
       <tbody>
          <tr>
             <th rowspan="4" scope="rowgroup">Exatas</th>
-            <td>Matemática</td>
-            <td class="numbercenter">0.0</td>
-            <td class="numbercenter">0.0</td>
-            <td class="numbercenter">0.0</td>
+            <td class="lefttext">Matemática</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
          </tr>
          <tr>
-            <td>Física</td>
-            <td class="numbercenter">0.0</td>
-            <td class="numbercenter">0.0</td>
-            <td class="numbercenter">0.0</td>
+            <td class="lefttext">Física</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
          </tr>
          <tr>
-            <td>Química</td>
-            <td class="numbercenter">0.0</td>
-            <td class="numbercenter">0.0</td>
-            <td class="numbercenter">0.0</td>
+            <td class="lefttext">Química</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
          </tr>
          <tr>
-            <td>Biologia</td>
-            <td class="numbercenter">0.0</td>
-            <td class="numbercenter">0.0</td>
-            <td class="numbercenter">0.0</td>
+            <td class="lefttext">Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
          </tr>
          <tr class="rowmedias">
-            <th colspan="4" scope="row">Média de Exatas</th>
-            <th class="numbercenter">0.0</th>
+            <th colspan="4" scope="row" class="lefttext">Média de Exatas</th>
+            <th>0.0</th>
          </tr>
          <tr>
             <th rowspan="2" scope="rowgroup">Humanas</th>
-            <td>História</td>
-            <td class="numbercenter">0.0</td>
-            <td class="numbercenter">0.0</td>
-            <td class="numbercenter">0.0</td>
+            <td class="lefttext">História</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
          </tr>
          <tr>
-            <td>Geografia</td>
-            <td class="numbercenter">0.0</td>
-            <td class="numbercenter">0.0.0</td>
-            <td class="numbercenter">0.0</td>
+            <td class="lefttext">Geografia</td>
+            <td>0.0</td>
+            <td>0.0.</td>
+            <td>0.0</td>
          </tr>
          <tr class="rowmedias">
-            <th colspan="4" scope="row">Média de Humanas</th>
-            <th class="numbercenter">0.0</th>
+            <th colspan="4" scope="row" class="lefttext">Média de Humanas</th>
+            <th>0.0</th>
          </tr>
       </tbody>
    </table>
