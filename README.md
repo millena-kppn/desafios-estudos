@@ -1,2 +1,2 @@
 # desafios-estudos
- Atividades referenetes ao curso de HTML5 e CSS3
+ Atividades referentes ao curso de HTML5 e CSS3
